@@ -7,3 +7,7 @@
 //
 
 import Foundation
+
+let QUESTIONS_URL = "https://api.stackexchange.com/2.2/questions?pagesize=50&order=desc&sort=creation&tagged=ios&site=stackoverflow"
+
+typealias DownloadComplete = () -> ()

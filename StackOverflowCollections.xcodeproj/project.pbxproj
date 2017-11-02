@@ -8,12 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		292D49BD1FA06AD0008CC997 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292D49BC1FA06AD0008CC997 /* AppDelegate.swift */; };
-		292D49BF1FA06AD0008CC997 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292D49BE1FA06AD0008CC997 /* ViewController.swift */; };
 		292D49C21FA06AD0008CC997 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292D49C01FA06AD0008CC997 /* Main.storyboard */; };
 		292D49C41FA06AD0008CC997 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 292D49C31FA06AD0008CC997 /* Assets.xcassets */; };
 		292D49C71FA06AD0008CC997 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 292D49C51FA06AD0008CC997 /* LaunchScreen.storyboard */; };
 		292D49D21FA06AD0008CC997 /* StackOverflowCollectionsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292D49D11FA06AD0008CC997 /* StackOverflowCollectionsTests.swift */; };
 		292D49DD1FA06AD0008CC997 /* StackOverflowCollectionsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 292D49DC1FA06AD0008CC997 /* StackOverflowCollectionsUITests.swift */; };
+		29A5907C1FA89869005BD97C /* UltravisualLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A5907B1FA89869005BD97C /* UltravisualLayout.swift */; };
+		29A5907E1FA8A0F1005BD97C /* QuestionsCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29A5907D1FA8A0F1005BD97C /* QuestionsCollectionViewController.swift */; };
+		29E7798A1FA1C734009451C0 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E779891FA1C734009451C0 /* APIClient.swift */; };
+		29E7798D1FA1CCDF009451C0 /* QuestionsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E7798C1FA1CCDF009451C0 /* QuestionsModel.swift */; };
+		29E779901FA1D85C009451C0 /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E7798F1FA1D85C009451C0 /* Constant.swift */; };
+		29E779921FA1D957009451C0 /* QuestionsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E779911FA1D957009451C0 /* QuestionsResponse.swift */; };
+		29E779951FA1DEEF009451C0 /* QuestionsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E779941FA1DEEF009451C0 /* QuestionsViewModel.swift */; };
+		29E779981FA1E580009451C0 /* QuestionsViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 29E779971FA1E580009451C0 /* QuestionsViewCell.swift */; };
+		29F55A791FAAFF0200684AB9 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 29F55A781FAAFF0200684AB9 /* README.md */; };
+		2C4F54E8B49CCC26F2533072 /* Pods_StackOverflowCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 60D45BB45233DA2D3D2E844E /* Pods_StackOverflowCollections.framework */; };
+		6C69968E8F474C06DC9BA309 /* Pods_StackOverflowCollectionsTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F346CDA2A0F3BB7D975335C1 /* Pods_StackOverflowCollectionsTests.framework */; };
+		F8255E88BC0B081FE7BF9A20 /* Pods_StackOverflowCollectionsUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BE50993E2E34C981CEA4820F /* Pods_StackOverflowCollectionsUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +45,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D655842941CA7B4B69C5188 /* Pods-StackOverflowCollectionsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowCollectionsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StackOverflowCollectionsUITests/Pods-StackOverflowCollectionsUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		292D49B91FA06AD0008CC997 /* StackOverflowCollections.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StackOverflowCollections.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		292D49BC1FA06AD0008CC997 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		292D49BE1FA06AD0008CC997 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		292D49C11FA06AD0008CC997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		292D49C31FA06AD0008CC997 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		292D49C61FA06AD0008CC997 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +58,23 @@
 		292D49D81FA06AD0008CC997 /* StackOverflowCollectionsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StackOverflowCollectionsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		292D49DC1FA06AD0008CC997 /* StackOverflowCollectionsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StackOverflowCollectionsUITests.swift; sourceTree = "<group>"; };
 		292D49DE1FA06AD0008CC997 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		29A5907B1FA89869005BD97C /* UltravisualLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UltravisualLayout.swift; sourceTree = "<group>"; };
+		29A5907D1FA8A0F1005BD97C /* QuestionsCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsCollectionViewController.swift; sourceTree = "<group>"; };
+		29E779891FA1C734009451C0 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
+		29E7798C1FA1CCDF009451C0 /* QuestionsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsModel.swift; sourceTree = "<group>"; };
+		29E7798F1FA1D85C009451C0 /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		29E779911FA1D957009451C0 /* QuestionsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsResponse.swift; sourceTree = "<group>"; };
+		29E779941FA1DEEF009451C0 /* QuestionsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewModel.swift; sourceTree = "<group>"; };
+		29E779971FA1E580009451C0 /* QuestionsViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsViewCell.swift; sourceTree = "<group>"; };
+		29F55A781FAAFF0200684AB9 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		3E4E65609B4C3F448E4869A7 /* Pods-StackOverflowCollections.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowCollections.release.xcconfig"; path = "Pods/Target Support Files/Pods-StackOverflowCollections/Pods-StackOverflowCollections.release.xcconfig"; sourceTree = "<group>"; };
+		53B4D4A3714C96BF99B2DDE4 /* Pods-StackOverflowCollectionsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowCollectionsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StackOverflowCollectionsTests/Pods-StackOverflowCollectionsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		60D45BB45233DA2D3D2E844E /* Pods_StackOverflowCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackOverflowCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF3C75A55B9820B8DF3C2753 /* Pods-StackOverflowCollections.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowCollections.debug.xcconfig"; path = "Pods/Target Support Files/Pods-StackOverflowCollections/Pods-StackOverflowCollections.debug.xcconfig"; sourceTree = "<group>"; };
+		BE50993E2E34C981CEA4820F /* Pods_StackOverflowCollectionsUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackOverflowCollectionsUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBDF3989F88B71839CA61DC8 /* Pods-StackOverflowCollectionsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowCollectionsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StackOverflowCollectionsTests/Pods-StackOverflowCollectionsTests.release.xcconfig"; sourceTree = "<group>"; };
+		F331ED557E1CC78CB39BCF94 /* Pods-StackOverflowCollectionsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StackOverflowCollectionsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-StackOverflowCollectionsUITests/Pods-StackOverflowCollectionsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F346CDA2A0F3BB7D975335C1 /* Pods_StackOverflowCollectionsTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StackOverflowCollectionsTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C4F54E8B49CCC26F2533072 /* Pods_StackOverflowCollections.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -61,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6C69968E8F474C06DC9BA309 /* Pods_StackOverflowCollectionsTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F8255E88BC0B081FE7BF9A20 /* Pods_StackOverflowCollectionsUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,10 +108,13 @@
 		292D49B01FA06AD0008CC997 = {
 			isa = PBXGroup;
 			children = (
+				29F55A781FAAFF0200684AB9 /* README.md */,
 				292D49BB1FA06AD0008CC997 /* StackOverflowCollections */,
 				292D49D01FA06AD0008CC997 /* StackOverflowCollectionsTests */,
 				292D49DB1FA06AD0008CC997 /* StackOverflowCollectionsUITests */,
 				292D49BA1FA06AD0008CC997 /* Products */,
+				37E5C379F34BC79C77604C4C /* Pods */,
+				757BBA284567074986B17224 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -97,8 +131,12 @@
 		292D49BB1FA06AD0008CC997 /* StackOverflowCollections */ = {
 			isa = PBXGroup;
 			children = (
+				29E779961FA1E50A009451C0 /* View */,
+				29E779931FA1DEC6009451C0 /* ViewModel */,
+				29E7798E1FA1D3E7009451C0 /* Util */,
+				29E7798B1FA1C888009451C0 /* Model */,
+				29E779881FA1C6A1009451C0 /* Network */,
 				292D49BC1FA06AD0008CC997 /* AppDelegate.swift */,
-				292D49BE1FA06AD0008CC997 /* ViewController.swift */,
 				292D49C01FA06AD0008CC997 /* Main.storyboard */,
 				292D49C31FA06AD0008CC997 /* Assets.xcassets */,
 				292D49C51FA06AD0008CC997 /* LaunchScreen.storyboard */,
@@ -125,6 +163,96 @@
 			path = StackOverflowCollectionsUITests;
 			sourceTree = "<group>";
 		};
+		2933CF241FA720DD00B78F1F /* ViewLayout */ = {
+			isa = PBXGroup;
+			children = (
+				29A5907B1FA89869005BD97C /* UltravisualLayout.swift */,
+			);
+			path = ViewLayout;
+			sourceTree = "<group>";
+		};
+		29E779881FA1C6A1009451C0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				29E779891FA1C734009451C0 /* APIClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		29E7798B1FA1C888009451C0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				29E7798C1FA1CCDF009451C0 /* QuestionsModel.swift */,
+				29E779911FA1D957009451C0 /* QuestionsResponse.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		29E7798E1FA1D3E7009451C0 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				29E7798F1FA1D85C009451C0 /* Constant.swift */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		29E779931FA1DEC6009451C0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				29E779941FA1DEEF009451C0 /* QuestionsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		29E779961FA1E50A009451C0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2933CF241FA720DD00B78F1F /* ViewLayout */,
+				29F8EE9C1FA3251100265708 /* ViewController */,
+				29F8EE9B1FA324EF00265708 /* ViewCell */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		29F8EE9B1FA324EF00265708 /* ViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				29E779971FA1E580009451C0 /* QuestionsViewCell.swift */,
+			);
+			path = ViewCell;
+			sourceTree = "<group>";
+		};
+		29F8EE9C1FA3251100265708 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				29A5907D1FA8A0F1005BD97C /* QuestionsCollectionViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		37E5C379F34BC79C77604C4C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AF3C75A55B9820B8DF3C2753 /* Pods-StackOverflowCollections.debug.xcconfig */,
+				3E4E65609B4C3F448E4869A7 /* Pods-StackOverflowCollections.release.xcconfig */,
+				53B4D4A3714C96BF99B2DDE4 /* Pods-StackOverflowCollectionsTests.debug.xcconfig */,
+				CBDF3989F88B71839CA61DC8 /* Pods-StackOverflowCollectionsTests.release.xcconfig */,
+				1D655842941CA7B4B69C5188 /* Pods-StackOverflowCollectionsUITests.debug.xcconfig */,
+				F331ED557E1CC78CB39BCF94 /* Pods-StackOverflowCollectionsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		757BBA284567074986B17224 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				60D45BB45233DA2D3D2E844E /* Pods_StackOverflowCollections.framework */,
+				F346CDA2A0F3BB7D975335C1 /* Pods_StackOverflowCollectionsTests.framework */,
+				BE50993E2E34C981CEA4820F /* Pods_StackOverflowCollectionsUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +260,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 292D49E11FA06AD0008CC997 /* Build configuration list for PBXNativeTarget "StackOverflowCollections" */;
 			buildPhases = (
+				C8868BD0DC20F6D6DFFAC961 /* [CP] Check Pods Manifest.lock */,
 				292D49B51FA06AD0008CC997 /* Sources */,
 				292D49B61FA06AD0008CC997 /* Frameworks */,
 				292D49B71FA06AD0008CC997 /* Resources */,
+				F704450A182E8FEB14CCB44A /* [CP] Embed Pods Frameworks */,
+				82EB0085BEC88E8E4A200219 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -149,9 +280,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 292D49E41FA06AD0008CC997 /* Build configuration list for PBXNativeTarget "StackOverflowCollectionsTests" */;
 			buildPhases = (
+				425532EDCF09254F00AF4A81 /* [CP] Check Pods Manifest.lock */,
 				292D49C91FA06AD0008CC997 /* Sources */,
 				292D49CA1FA06AD0008CC997 /* Frameworks */,
 				292D49CB1FA06AD0008CC997 /* Resources */,
+				3A102F18A5B1A8220E44711A /* [CP] Embed Pods Frameworks */,
+				E94811B3FF989887ECC8B03F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -167,9 +301,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 292D49E71FA06AD0008CC997 /* Build configuration list for PBXNativeTarget "StackOverflowCollectionsUITests" */;
 			buildPhases = (
+				6422AE9F2F198CB219C98AB5 /* [CP] Check Pods Manifest.lock */,
 				292D49D41FA06AD0008CC997 /* Sources */,
 				292D49D51FA06AD0008CC997 /* Frameworks */,
 				292D49D61FA06AD0008CC997 /* Resources */,
+				D5347124ED82240DE24DAAA5 /* [CP] Embed Pods Frameworks */,
+				A21ECE5F91D75E5A6E999FFB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,6 +371,7 @@
 			files = (
 				292D49C71FA06AD0008CC997 /* LaunchScreen.storyboard in Resources */,
 				292D49C41FA06AD0008CC997 /* Assets.xcassets in Resources */,
+				29F55A791FAAFF0200684AB9 /* README.md in Resources */,
 				292D49C21FA06AD0008CC997 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,13 +392,176 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3A102F18A5B1A8220E44711A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StackOverflowCollectionsTests/Pods-StackOverflowCollectionsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		425532EDCF09254F00AF4A81 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StackOverflowCollectionsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6422AE9F2F198CB219C98AB5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StackOverflowCollectionsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		82EB0085BEC88E8E4A200219 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StackOverflowCollections/Pods-StackOverflowCollections-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A21ECE5F91D75E5A6E999FFB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StackOverflowCollectionsUITests/Pods-StackOverflowCollectionsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C8868BD0DC20F6D6DFFAC961 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StackOverflowCollections-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5347124ED82240DE24DAAA5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StackOverflowCollectionsUITests/Pods-StackOverflowCollectionsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E94811B3FF989887ECC8B03F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StackOverflowCollectionsTests/Pods-StackOverflowCollectionsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F704450A182E8FEB14CCB44A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-StackOverflowCollections/Pods-StackOverflowCollections-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireObjectMapper/AlamofireObjectMapper.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/ObjectMapper/ObjectMapper.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireObjectMapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ObjectMapper.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-StackOverflowCollections/Pods-StackOverflowCollections-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		292D49B51FA06AD0008CC997 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				292D49BF1FA06AD0008CC997 /* ViewController.swift in Sources */,
+				29E779981FA1E580009451C0 /* QuestionsViewCell.swift in Sources */,
+				29E7798D1FA1CCDF009451C0 /* QuestionsModel.swift in Sources */,
+				29A5907C1FA89869005BD97C /* UltravisualLayout.swift in Sources */,
+				29E779951FA1DEEF009451C0 /* QuestionsViewModel.swift in Sources */,
 				292D49BD1FA06AD0008CC997 /* AppDelegate.swift in Sources */,
+				29E779921FA1D957009451C0 /* QuestionsResponse.swift in Sources */,
+				29A5907E1FA8A0F1005BD97C /* QuestionsCollectionViewController.swift in Sources */,
+				29E7798A1FA1C734009451C0 /* APIClient.swift in Sources */,
+				29E779901FA1D85C009451C0 /* Constant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -424,6 +725,7 @@
 		};
 		292D49E21FA06AD0008CC997 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AF3C75A55B9820B8DF3C2753 /* Pods-StackOverflowCollections.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -438,6 +740,7 @@
 		};
 		292D49E31FA06AD0008CC997 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3E4E65609B4C3F448E4869A7 /* Pods-StackOverflowCollections.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -452,6 +755,7 @@
 		};
 		292D49E51FA06AD0008CC997 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 53B4D4A3714C96BF99B2DDE4 /* Pods-StackOverflowCollectionsTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -468,6 +772,7 @@
 		};
 		292D49E61FA06AD0008CC997 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBDF3989F88B71839CA61DC8 /* Pods-StackOverflowCollectionsTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -484,6 +789,7 @@
 		};
 		292D49E81FA06AD0008CC997 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D655842941CA7B4B69C5188 /* Pods-StackOverflowCollectionsUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -499,6 +805,7 @@
 		};
 		292D49E91FA06AD0008CC997 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F331ED557E1CC78CB39BCF94 /* Pods-StackOverflowCollectionsUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

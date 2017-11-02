@@ -9,23 +9,25 @@
 import UIKit
 
 class QuestionsViewCell: UICollectionViewCell {
+   
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var answersLabel: UILabel!
+    @IBOutlet weak var tags: UILabel!
+    @IBOutlet weak var questionsViewLabel: UILabel!
     
-    
-    
-    func confiqureUserCell(item: QuestionsModel){
+    func confiqureQuestionsCell(item: QuestionsModel) {
+
+        let questionTags = item.tags! as NSArray
+        questionsViewLabel.text = item.title
+        answersLabel.text = "\(item.answerCount!)"
+        tags.text = questionTags.componentsJoined(by: " ")
         
-        
-//
-        if let label = self.viewWithTag(100) as? UILabel {
-            label.text = "\(item.answerCount!)"
-            print("indaclub",item.answerCount!)
-            
+        if item.acceptedAnswerID == nil {
+            imageView.image =  UIImage(named: "clearcircle.png")
+
+        } else {
+            imageView.image =  UIImage(named: "greencircle.png")
 
         }
-        
-//        self.userImage.sd_setImage(with: URL(string: (item.picture?.medium)!))
-//        self.userName.text = item.name?.getFullName()
-//        self.userEmail.text = item.email
-        
     }
 }

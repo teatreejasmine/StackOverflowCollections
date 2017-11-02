@@ -6,8 +6,19 @@
 //  Copyright © 2017 Malea Kotelo. All rights reserved.
 //
 
-import UIKit
+import Foundation
+import ObjectMapper
 
-class QuestionsResponse: NSObject {
+class QuestionsResponse: Mappable {
+    
+    var questionsModelList : [QuestionsModel]?
+    
+    required init?(map: Map){
+        
+    }
+    
+    func mapping(map: Map) {
+        questionsModelList <- map ["items"]
+    }
 
 }
