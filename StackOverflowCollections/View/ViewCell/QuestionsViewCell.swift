@@ -11,22 +11,24 @@ import UIKit
 class QuestionsViewCell: UICollectionViewCell {
    
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var answersLabel: UILabel!
     @IBOutlet weak var tags: UILabel!
     @IBOutlet weak var questionsViewLabel: UILabel!
+    @IBOutlet weak var answersLabel: UILabel!
     
     func confiqureQuestionsCell(item: QuestionsModel) {
 
         let questionTags = item.tags! as NSArray
         questionsViewLabel.text = item.title
-        answersLabel.text = "\(item.answerCount!)"
         tags.text = questionTags.componentsJoined(by: " ")
+        answersLabel.text = "\(item.answerCount!)"
         
         if item.acceptedAnswerID == nil {
-            imageView.image =  UIImage(named: "clearcircle.png")
+            imageView.image =  UIImage(named: "circle.png")
+            print("no answer")
 
         } else {
             imageView.image =  UIImage(named: "greencircle.png")
+            print("others")
 
         }
     }

@@ -10,10 +10,8 @@ import UIKit
 import NVActivityIndicatorView
 
 
-private let reuseIdentifier = "Cell"
 
-class QuestionsCollectionViewController: UICollectionViewController, NVActivityIndicatorViewable {
-    
+class QuestionsCollectionViewController: UICollectionViewController, NVActivityIndicatorViewable, UICollectionViewDelegateFlowLayout {
     
     @IBOutlet var questionsViewModel: QuestionsViewModel!
     var questionsModel = [QuestionsModel]()
@@ -25,6 +23,14 @@ class QuestionsCollectionViewController: UICollectionViewController, NVActivityI
         //Animation to indicate data is being loaded
         startAnimating(size, message: "Loading...", type: NVActivityIndicatorType(rawValue: 1)!)
         
+        let width = view.frame.size.width
+        print("width is \(width)")
+        let height = view.frame.size.height
+         print("height is \(height)")
+        let layout = collectionView?.collectionViewLayout  as! UICollectionViewFlowLayout
+        
+        //layout.itemSize = CGSize(width: 1200, height: 150)
+        layout.itemSize.width = width
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -55,8 +61,22 @@ class QuestionsCollectionViewController: UICollectionViewController, NVActivityI
         if !self.isQuestionModelEmpty() {
             cell.confiqureQuestionsCell(item: self.questionsModel[indexPath.row])
         }
-        
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        let width = view.frame.size.width
+        
+        return CGSize(width: width, height: 200)
+    }
+   
+    
+    override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
+        super.viewWillTransition(to: size, with: coordinator)
+        collectionView?.collectionViewLayout.invalidateLayout()
+    }
+    
+    
+  
 
 }
