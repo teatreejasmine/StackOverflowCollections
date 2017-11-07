@@ -30,17 +30,17 @@
                                     <rect key="frame" x="0.0" y="0.0" width="370" height="220"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="qA1-GJ-fen">
+                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="qA1-GJ-fen">
                                             <rect key="frame" x="192" y="16" width="370" height="124"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lhjgf qsd hgfhg asdfasdf asdfasdfasdf asdfasdfasdf" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keH-cH-82h">
-                                                    <rect key="frame" x="0.0" y="0.0" width="370" height="41"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Questions Title" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="keH-cH-82h">
+                                                    <rect key="frame" x="0.0" y="0.0" width="370" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Labeljhgjk khkjhjkh kjh hkjh kjhgkjhkjhjkhjkh khjjkhkjhkj khkjhjkhjkjkh kjhjkhjkh jk hjkhjkh" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ6-xx-BDf">
-                                                    <rect key="frame" x="0.0" y="51" width="370" height="73"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Tags" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZZ6-xx-BDf">
+                                                    <rect key="frame" x="0.0" y="25.5" width="370" height="98.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -62,7 +62,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yl8-98-uOO">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Answers Count" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yl8-98-uOO">
                                                     <rect key="frame" x="59" y="48" width="42" height="20.5"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
@@ -96,10 +96,10 @@
                                     <constraint firstItem="64O-tG-dtm" firstAttribute="centerY" secondItem="BJ2-mh-jKB" secondAttribute="centerY" id="mRt-iQ-iM0"/>
                                 </constraints>
                                 <connections>
-                                    <outlet property="answersLabel" destination="yl8-98-uOO" id="wy6-Wc-YQB"/>
-                                    <outlet property="imageView" destination="scn-o1-xIh" id="AN0-AB-z4n"/>
-                                    <outlet property="questionsViewLabel" destination="keH-cH-82h" id="t4E-A3-Sag"/>
-                                    <outlet property="tags" destination="ZZ6-xx-BDf" id="hvn-2M-SH9"/>
+                                    <outlet property="acceptedQuestionsImageView" destination="scn-o1-xIh" id="vFo-UT-Iqr"/>
+                                    <outlet property="answersCount" destination="yl8-98-uOO" id="Wsc-a7-RQd"/>
+                                    <outlet property="questionsTitleLabel" destination="keH-cH-82h" id="GP0-r3-m0t"/>
+                                    <outlet property="tagsLabel" destination="ZZ6-xx-BDf" id="aUY-Qy-m6I"/>
                                 </connections>
                             </collectionViewCell>
                         </cells>

@@ -24,5 +24,24 @@ class QuestionsViewModel: NSObject {
         return questionsList.count
     }
     
+    func decodeHTMLString(parsedString: String) -> String? {
+        var decodedString = ""
+        guard let data = parsedString.data(using: .utf8) else {
+            return nil
+            
+        }
+        
+        do {
+            decodedString = try NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html,
+                                                                           .characterEncoding: String.Encoding.utf8.rawValue],documentAttributes: nil).string
+        } catch let error {
+            print("error occured \(error)")
+        }
+        
+        return decodedString
+    }
+    
+ 
+
 
 }

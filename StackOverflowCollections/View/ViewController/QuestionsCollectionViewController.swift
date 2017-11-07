@@ -22,15 +22,7 @@ class QuestionsCollectionViewController: UICollectionViewController, NVActivityI
         super.viewDidLoad()
         //Animation to indicate data is being loaded
         startAnimating(size, message: "Loading...", type: NVActivityIndicatorType(rawValue: 1)!)
-        
-        let width = view.frame.size.width
-        print("width is \(width)")
-        let height = view.frame.size.height
-         print("height is \(height)")
-        let layout = collectionView?.collectionViewLayout  as! UICollectionViewFlowLayout
-        
-        //layout.itemSize = CGSize(width: 1200, height: 150)
-        layout.itemSize.width = width
+  
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -59,15 +51,14 @@ class QuestionsCollectionViewController: UICollectionViewController, NVActivityI
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuestionsViewCell", for: indexPath) as! QuestionsViewCell
         if !self.isQuestionModelEmpty() {
-            cell.confiqureQuestionsCell(item: self.questionsModel[indexPath.row])
+            cell.confiqureQuestionsCell(item: self.questionsModel[indexPath.row], questionsViewModel: self.questionsViewModel)
         }
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
         let width = view.frame.size.width
-        
-        return CGSize(width: width, height: 200)
+        return CGSize(width: width, height: 220)
     }
    
     
@@ -76,7 +67,7 @@ class QuestionsCollectionViewController: UICollectionViewController, NVActivityI
         collectionView?.collectionViewLayout.invalidateLayout()
     }
     
-    
-  
 
 }
+
+

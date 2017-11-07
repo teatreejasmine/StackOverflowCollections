@@ -10,26 +10,26 @@ import UIKit
 
 class QuestionsViewCell: UICollectionViewCell {
    
-    @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var tags: UILabel!
-    @IBOutlet weak var questionsViewLabel: UILabel!
-    @IBOutlet weak var answersLabel: UILabel!
+    @IBOutlet weak var acceptedQuestionsImageView: UIImageView!
+    @IBOutlet weak var tagsLabel: UILabel!
+    @IBOutlet weak var questionsTitleLabel: UILabel!
+    @IBOutlet weak var answersCount: UILabel!
     
-    func confiqureQuestionsCell(item: QuestionsModel) {
-
+    func confiqureQuestionsCell(item: QuestionsModel, questionsViewModel: QuestionsViewModel) {
+        //set values to labels
         let questionTags = item.tags! as NSArray
-        questionsViewLabel.text = item.title
-        tags.text = questionTags.componentsJoined(by: " ")
-        answersLabel.text = "\(item.answerCount!)"
+        tagsLabel.text = questionTags.componentsJoined(by: " ")
+        answersCount.text = "\(item.answerCount!)"
+        questionsTitleLabel.text = questionsViewModel.decodeHTMLString(parsedString: item.title!)
         
         if item.acceptedAnswerID == nil {
-            imageView.image =  UIImage(named: "circle.png")
-            print("no answer")
+            acceptedQuestionsImageView.image =  UIImage(named: "circle.png")
 
         } else {
-            imageView.image =  UIImage(named: "greencircle.png")
-            print("others")
+            acceptedQuestionsImageView.image =  UIImage(named: "greencircle.png")
 
         }
     }
 }
+
+
