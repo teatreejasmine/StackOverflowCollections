@@ -32,8 +32,9 @@ class QuestionsViewModel: NSObject {
         }
         
         do {
-            decodedString = try NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html,
-                                                                           .characterEncoding: String.Encoding.utf8.rawValue],documentAttributes: nil).string
+            decodedString = try NSAttributedString(data: data,
+                                                   options: [.documentType: NSAttributedString.DocumentType.html,.characterEncoding: String.Encoding.utf8.rawValue],
+                                                   documentAttributes: nil).string
         } catch let error {
             print("error occured \(error)")
         }
@@ -41,7 +42,4 @@ class QuestionsViewModel: NSObject {
         return decodedString
     }
     
- 
-
-
 }

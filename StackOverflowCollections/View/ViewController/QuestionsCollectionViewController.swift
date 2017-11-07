@@ -22,6 +22,7 @@ class QuestionsCollectionViewController: UICollectionViewController, NVActivityI
         super.viewDidLoad()
         //Animation to indicate data is being loaded
         startAnimating(size, message: "Loading...", type: NVActivityIndicatorType(rawValue: 1)!)
+        
   
     }
     
@@ -34,8 +35,15 @@ class QuestionsCollectionViewController: UICollectionViewController, NVActivityI
     func downloadQuestions() {
         self.questionsViewModel.getQuestions {
             self.questionsModel = Array(self.questionsViewModel.questionsList)
-            self.collectionView?.reloadData()
-            self.stopAnimating()
+            
+            if self.questionsViewModel.questionsList.count != 0 {
+                self.collectionView?.reloadData()
+                self.stopAnimating()
+                
+            } else {
+                self.stopAnimating()
+                self.startAnimating(self.size, message: "Please make sure you are connected to the internet...", type: NVActivityIndicatorType(rawValue: 1)!)
+            }
         }
     }
 
