@@ -20,17 +20,12 @@ class QuestionsViewModel: NSObject {
         }
     }
     
-    func numberOfItemsToDisplay(in section: Int) -> Int {
-        return questionsList.count
-    }
-    
     func decodeHTMLString(parsedString: String) -> String? {
         var decodedString = ""
         guard let data = parsedString.data(using: .utf8) else {
             return nil
             
         }
-        
         do {
             decodedString = try NSAttributedString(data: data,
                                                    options: [.documentType: NSAttributedString.DocumentType.html,.characterEncoding: String.Encoding.utf8.rawValue],
@@ -38,8 +33,12 @@ class QuestionsViewModel: NSObject {
         } catch let error {
             print("error occured \(error)")
         }
-        
         return decodedString
     }
+    
+    func isQuestionModelEmpty() -> Bool {
+        return questionsList.isEmpty
+    }
+    
     
 }

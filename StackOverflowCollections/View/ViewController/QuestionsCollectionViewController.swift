@@ -22,7 +22,6 @@ class QuestionsCollectionViewController: UICollectionViewController, NVActivityI
         super.viewDidLoad()
         //Animation to indicate data is being loaded
         startAnimating(size, message: "Loading...", type: NVActivityIndicatorType(rawValue: 1)!)
-        
   
     }
     
@@ -35,7 +34,6 @@ class QuestionsCollectionViewController: UICollectionViewController, NVActivityI
     func downloadQuestions() {
         self.questionsViewModel.getQuestions {
             self.questionsModel = Array(self.questionsViewModel.questionsList)
-            
             if self.questionsViewModel.questionsList.count != 0 {
                 self.collectionView?.reloadData()
                 self.stopAnimating()
@@ -47,10 +45,6 @@ class QuestionsCollectionViewController: UICollectionViewController, NVActivityI
         }
     }
 
-    func isQuestionModelEmpty() -> Bool {
-        return self.questionsModel.isEmpty
-    }
-
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return self.questionsModel.count
         
@@ -58,7 +52,7 @@ class QuestionsCollectionViewController: UICollectionViewController, NVActivityI
 
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "QuestionsViewCell", for: indexPath) as! QuestionsViewCell
-        if !self.isQuestionModelEmpty() {
+        if !self.questionsViewModel.isQuestionModelEmpty() {
             cell.confiqureQuestionsCell(item: self.questionsModel[indexPath.row], questionsViewModel: self.questionsViewModel)
         }
         return cell
@@ -68,7 +62,6 @@ class QuestionsCollectionViewController: UICollectionViewController, NVActivityI
         let width = view.frame.size.width
         return CGSize(width: width, height: 220)
     }
-   
     
     override func viewWillTransition(to size: CGSize, with coordinator: UIViewControllerTransitionCoordinator) {
         super.viewWillTransition(to: size, with: coordinator)

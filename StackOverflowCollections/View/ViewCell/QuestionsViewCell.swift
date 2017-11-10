@@ -17,11 +17,12 @@ class QuestionsViewCell: UICollectionViewCell {
     
     func confiqureQuestionsCell(item: QuestionsModel, questionsViewModel: QuestionsViewModel) {
         //set values to labels
-        let questionTags = item.tags! as NSArray
-        tagsLabel.text = questionTags.componentsJoined(by: " ")
+        let questionTagsArray = item.tags! as NSArray
+        let questionsTags = questionTagsArray.componentsJoined(by: " ")
+        tagsLabel.text = questionsTags
         answersCount.text = "\(item.answerCount!)"
         questionsTitleLabel.text = questionsViewModel.decodeHTMLString(parsedString: item.title!)
-        
+
         if item.acceptedAnswerID == nil {
             acceptedQuestionsImageView.image =  UIImage(named: "circle.png")
 
