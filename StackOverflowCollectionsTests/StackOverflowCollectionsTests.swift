@@ -25,11 +25,6 @@ class StackOverflowCollectionsTests: XCTestCase {
         XCTAssertTrue(stringToDecode == "What is this <> ")
         
     }
-    
-    func testParsedData()  {
-        
-    }
-    
-   
+
     
 }
